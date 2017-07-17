@@ -1,0 +1,24 @@
+inherit kf5
+
+NAME="kf5-kblog"
+VERSION=17.04.3
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE web blogging library"
+DESCRIPTION="KBlog is a library for calling functions on Blogger 1.0, MetaWeblog,
+MovableType and GData compatible blogs. It calls the APIs using KXmlRpcClient
+and Syndication."
+
+PKG_NAMES="libKF5Blog5 libKF5Blog-devel"
+libKF5Blog5_CONTENTS="
+	usr/bin/cygKF5Blog-5.dll
+	usr/share/doc/${NAME}
+	usr/share/locale/*/LC_MESSAGES/libkblog5.mo
+"
+libKF5Blog_devel_CONTENTS="
+	usr/include/KF5/KBlog/
+	usr/include/KF5/kblog_version.h
+	usr/lib/cmake/KF5Blog/
+	usr/lib/libKF5Blog.dll.a
+	usr/lib/qt5/mkspecs/modules/qt_KBlog.pri
+"
