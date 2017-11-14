@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-kblog"
-VERSION=17.04.3
+VERSION=17.08.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE web blogging library"
@@ -15,6 +15,7 @@ libKF5Blog5_CONTENTS="
 	usr/share/doc/${NAME}
 	usr/share/locale/*/LC_MESSAGES/libkblog5.mo
 "
+libKF5Blog_devel_REQUIRES="libKF5CalendarCore-devel libKF5Syndication-devel"
 libKF5Blog_devel_CONTENTS="
 	usr/include/KF5/KBlog/
 	usr/include/KF5/kblog_version.h
